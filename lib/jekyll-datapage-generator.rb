@@ -133,7 +133,7 @@ module Jekyll
       # page_gen-dirs is a global option which determines whether we want to
       # generate index pages (name/index.html) or HTML files (name.html) for
       # all sets
-      index_files = site.config['page_gen-dirs'] == true
+      index_files = site.config['page_gen-dirs'] == false
 
       # data contains the specification of all the datasets for which we want
       # to generate individual pages (look at the README file for its documentation)
