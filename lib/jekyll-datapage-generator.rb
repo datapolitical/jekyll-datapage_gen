@@ -140,7 +140,7 @@ module Jekyll
       data = site.config['page_gen']
       if data
         data.each do |data_spec|
-          index_files_for_this_data = data_spec['index_files'] != nil ? data_spec['index_files'] : index_files
+          index_files_for_this_data = false
           template         = data_spec['template'] || data_spec['data']
           name             = data_spec['name']
           name_expr        = data_spec['name_expr']
